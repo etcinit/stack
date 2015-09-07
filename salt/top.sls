@@ -4,4 +4,8 @@ base:
     - common.timezone
     - common.home
     - windows.base
-    - common.php
+  'os:MacOS':
+    - match: grain
+    - common.timezone
+    - common.home
+    - darwin.base
