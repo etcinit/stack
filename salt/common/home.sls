@@ -1,5 +1,6 @@
 '~/.ssh':
   file.directory:
+    - user: {{ salt['pillar.get']('users:main') }}
     - recurse: []
 
 '~/.vim':
