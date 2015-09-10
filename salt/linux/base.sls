@@ -1,2 +1,4 @@
 include:
-  - unix.base
+    - unix.base
+    - linux.graphical.base
+    - linux.java

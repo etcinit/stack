@@ -14,3 +14,7 @@ curl:
 wget:
     pkg.installed:
         - name: {{ salt['pillar.get']('packages:wget', 'wget') }}
+
+zsh:
+    pkg.installed:
+        - name: {{ salt['pillar.get']('packages:zsh', 'zsh') }}

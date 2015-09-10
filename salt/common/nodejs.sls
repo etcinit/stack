@@ -1,5 +1,5 @@
 gulp:
-  npm.installed: []
+    npm.installed: []
 
 bower:
-  npm.installed: []
+    npm.installed: []
