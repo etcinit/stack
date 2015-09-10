@@ -1,8 +1,16 @@
 include:
-  - unix.editors
+    - unix.editors
+    - unix.golang
+    - unix.php
+
+git:
+    pkg.installed:
+        - name: {{ salt['pillar.get']('packages:git', 'git') }}
 
 curl:
-  pkg.installed: []
+    pkg.installed:
+        - name: {{ salt['pillar.get']('packages:curl', 'curl') }}
 
 wget:
-  pkg.installed: []
+    pkg.installed:
+        - name: {{ salt['pillar.get']('packages:wget', 'wget') }}

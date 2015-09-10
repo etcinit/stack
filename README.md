@@ -17,9 +17,16 @@
 
 ```sh
 brew install saltstack
-sudo salt-call --local --file-root=./salt state.highstate
+sudo salt-call --local --file-root=./salt --pillar-root=./pillar state.highstate
 ```
 
 ### Linux
 
 TODO
+
+#### Fedora
+
+```sh
+sudo dnf install salt-minion
+sudo salt-call --local --file-root=./salt --pillar-root=./pillar state.highstate
+```

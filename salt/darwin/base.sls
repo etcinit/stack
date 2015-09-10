@@ -1,10 +1,13 @@
+{% set os = salt['grains.get']('os', '') %}
+
 include:
-  - unix.base
-  - darwin.editors
-  - darwin.golang
-  - darwin.php
-  - darwin.tools
-  - darwin.osx
+    - unix.base
+    - unix.editors
+    - darwin.browsers
+    - darwin.tools
+{% if os == "MacOS" %}
+    - darwin.osx.base
+{% endif %}
 
 'brew-cask':
-  pkg.installed: []
+    pkg.installed: []

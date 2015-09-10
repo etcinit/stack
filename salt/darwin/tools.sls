@@ -1,8 +1,14 @@
 openssl:
-  pkg.installed: []
+    pkg.installed: []
+
+libressl:
+    pkg.installed: []
 
 watchman:
-  pkg.installed: []
+    pkg.installed: []
 
 tig:
-  pkg.installed: []
+    pkg.installed: []
+
+tree:
+    pkg.installed: []
