@@ -1,3 +1,3 @@
 jdk:
     pkg.installed:
-        - name: {{ salt['pillar.get']('packages:java-jdk', 'java-jdk') }}
+        - name: {{ salt['pillar.get']('packages:jdk', 'java-jdk') }}

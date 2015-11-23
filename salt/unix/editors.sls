@@ -1,3 +1,3 @@
 vim:
   pkg.installed:
-    - name: vim
+    - name: {{ salt['pillar.get']('packages:vim', 'vim') }}

@@ -5,7 +5,8 @@ packages:
     golang: golang
     composer: composer
     php: php
-    java-jdk: java-1.7.0-openjdk
+    jdk: 'java-1.8.0-openjdk'
+    vim: 'vim-enhanced'
     {% elif grains['os_family'] == 'Debian' %}
     apache: apache2
     git: git-core
